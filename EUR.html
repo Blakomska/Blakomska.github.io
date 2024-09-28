@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="style_strona.css">
+</head>
+
+<body>
+    <div class="mainBar">
+        <div class="mainTitle">
+            <a href="index.html">KURSY WALUT I ZŁOTA</a>
+        </div>
+        <div id="currentDate"></div>
+        <div class="podzialka">|</div>
+        <div class="dolar">
+            <a href="USD.html">USD</a>
+        </div>
+        <div class="euro">
+            <a href="EUR.html">EUR</a>
+        </div>
+        <div class="frank">
+            <a href="CHF.html">CHF</a>
+        </div>
+        <div class="funt">
+            <a href="GBP.html">GBP</a>
+        </div>
+        <div class="zloto">
+            <a href="ZLOTO.html">ZŁOTO</a>
+        </div>
+
+    </div>
+    <div class="mainBar2"></div>
+    <p>
+    <table class="tab_waluta">
+        <tr>
+            <th>EURO</th>
+            <th>Waluta</th>
+            <th>KUPNO</th>
+            <th>SPRZEDAŻ</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td id="currentDate1"></td>
+            <td>EUR</td>
+            <td id="kupno"></td>
+            <td id="sprzedaz"></td>
+            <td>PLN</td>
+        </tr>
+    </table>
+    </p>
+    <p></p>
+        <table class="przeliczona_waluta">
+            <tr>
+                <th></th>
+                <th>Ilość USD</th>
+                <th>Wartość transakcji</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Chcę kupić</td>
+                <td>
+                    <input type="number" id="kupuje" min="0" max="10000"></input>
+                </td>
+                <td id="przelicz_kupno">0</td>
+                <td>PLN</td>
+            </tr>
+            <tr>
+                <td>Chcę sprzedać</td>
+                <td>
+                    <input type="number" id="sprzedaje" min="0" max="10000"></input>
+                </td>
+                <td id="przelicz_sprzedaz">0</td>
+                <td>PLN</td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="przelicz">PRZELICZ</button>
+                </td>
+                <td>Suma:</td>
+                <td id="suma">0</td>
+                <td>PLN</td>
+            </tr>
+        </table>
+        </p>
+        
+    <div class="footer">
+        <span class="adres">KANTOR WROCŁAWSKI, ul. Sienkiewicza 112, 50-348 Wrocław</span>
+        <span class="telefon">+48 664-564-564</span>
+        <span class="mapa_link">
+            <a target="blank"
+                href="https://www.google.com/maps/place/Henryka+Sienkiewicza+112,+50-348+Wroc%C5%82aw/@51.115955,17.0579698,17z/data=!3m1!4b1!4m6!3m5!1s0x470fe9d2e0ef77c1:0x5c6aa67eb7076333!8m2!3d51.115955!4d17.0605447!16s%2Fg%2F11c5dpp9_3?authuser=0&entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D">
+                Sprawdż na mapie</a>
+        </span>
+    </div>
+
+    </div>
+    <div class="footer2"></div>
+
+    <script type="text/javascript" src="waluty.js"></script>
+    <script>
+        getData("eur");
+    </script>
+</body>
+
+</html>

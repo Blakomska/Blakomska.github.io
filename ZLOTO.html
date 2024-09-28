@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="style_strona.css">
+</head>
+
+<body>
+    <div class="mainBar">
+        <div class="mainTitle">
+            <a href="index.html">KURSY WALUT I ZŁOTA</a>
+        </div>
+        <div id="currentDate"></div>
+        <div class="podzialka">|</div>
+        <div class="dolar">
+            <a href="USD.html">USD</a>
+        </div>
+        <div class="euro">
+            <a href="EUR.html">EUR</a>
+        </div>
+        <div class="frank">
+            <a href="CHF.html">CHF</a>
+        </div>
+        <div class="funt">
+            <a href="GBP.html">GBP</a>
+        </div>
+        <div class="zloto">
+            <a href="ZLOTO.html">ZŁOTO</a>
+        </div>
+
+    </div>
+    <div class="mainBar2"></div>
+    <p>
+    <table class="tab_waluta">
+        <tr>
+            <th>Złoto w próbie 1000</th>
+            <th>Jednostka</th>
+            <th>KUPNO</th>
+            <th>SPRZEDAŻ</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td id="currentDate1"></td>
+            <td>1 GRAM</td>
+            <td id="kupno"></td>
+            <td id="sprzedaz"></td>
+            <td>PLN</td>
+        </tr>
+    </table>
+    </p>
+    <p>
+        <table class="historia_waluta">
+            <tr>
+                <th>Data</th>
+                <th>Jednostka</th>
+                <th>KUPNO</th>
+                <th>SPRZEDAŻ</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td id="data1"></td>
+                <td>1 GRAM</td>
+                <td id="kupno1"></td>
+                <td id="sprzedaz1"></td>
+                <td>PLN</td>
+            </tr>
+            <tr>
+                <td id="data2"></td>
+                <td>1 GRAM</td>
+                <td id="kupno2"></td>
+                <td id="sprzedaz2"></td>
+                <td>PLN</td>
+            </tr>
+            <tr>
+                <td id="data3"></td>
+                <td>1 GRAM</td>
+                <td id="kupno3"></td>
+                <td id="sprzedaz3"></td>
+                <td>PLN</td>
+            </tr>
+        </table>
+        </p>
+    <div class="footer">
+        <span class="adres">KANTOR WROCŁAWSKI, ul. Sienkiewicza 112, 50-348 Wrocław</span>
+        <span class="telefon">+48 664-564-564</span>
+        <span class="mapa_link">
+            <a target="blank"
+                href="https://www.google.com/maps/place/Henryka+Sienkiewicza+112,+50-348+Wroc%C5%82aw/@51.115955,17.0579698,17z/data=!3m1!4b1!4m6!3m5!1s0x470fe9d2e0ef77c1:0x5c6aa67eb7076333!8m2!3d51.115955!4d17.0605447!16s%2Fg%2F11c5dpp9_3?authuser=0&entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D">
+                Sprawdż na mapie</a>
+        </span>
+    </div>
+
+    </div>
+    <div class="footer2"></div>
+
+    <script type="text/javascript" src="ZLOTO.js"></script>
+    <script>
+        getData();
+        daty();
+    </script>
+
+</body>
+
+</html>

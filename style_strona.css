@@ -1,0 +1,215 @@
+body {
+    background-color: #f3d1b9;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mainBar {
+    height: 60px;
+    background-color: #85677b;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.mainBar2 {
+    height: 70px;
+    background-color:  #53404d;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    z-index: -1;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.mainTitle {
+    position: fixed;
+    top: 15px;
+    left: 3%;
+    display: flex;
+    font-size: x-large;
+}
+
+#currentDate {
+    position: fixed;
+    top: 15px;
+    right: 3%;
+    display: flex;
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+
+.podzialka {
+    position: relative;
+    top: 7px;
+    left: 61%;
+    display: flex;
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+.dolar {
+    position: relative;
+    top: 9px;
+    left: 29%;
+    display: flex;
+    font-size: xx-large
+}
+
+.euro {
+    position: relative;
+    top: 9px;
+    left: 32%;
+    display: flex;
+    font-size: xx-large
+}
+
+.frank {
+    position: relative;
+    top: 9px;
+    left: 35%;
+    display: flex;
+    font-size: xx-large
+}
+
+.funt {
+    position: relative;
+    top: 9px;
+    left: 38%;
+    display: flex;
+    font-size: xx-large
+}
+
+.zloto {
+    position: relative;
+    top: 9px;
+    left: 50%;
+    display: flex;
+    font-size: xx-large
+}
+
+a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.opisy{
+    color: #53404d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    top: 20vh;
+    left: 2vb;
+    font-size: x-large;
+}
+.image{
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 350px;
+    left: 120px;
+    z-index: -1;
+}
+.tab_waluta {
+    position: fixed;
+    display: flex;
+    top: 170px;
+    left: 270px;
+    color: #53404d;
+    font-size: x-large;
+}
+th {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid whitesmoke;
+}
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid whitesmoke;
+}
+th:nth-child(1) {
+    width: 260px;
+}
+td:nth-child(2) {
+    width: 120px;
+}
+.historia_waluta {
+    position: fixed;
+    display: flex;
+    top: 350px;
+    left: 270px;
+    color: #53404d;
+    font-size: x-large;
+}
+.przeliczona_waluta {
+    position: fixed;
+    display: flex;
+    top: 350px;
+    left: 270px;
+    color: #53404d;
+    font-size: x-large;
+}
+input {
+    border: none;
+    height: 25px;
+    width: 100px;
+    color:  #53404d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+button {
+    background-color: #85677b;
+    border-radius: 10%;
+    height: 30px;
+    width: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
+    font-size: large;
+}
+.footer {
+    height: 40px;
+    background-color: #85677b;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    color:  whitesmoke;
+    font-size: large;
+    column-gap: 7%;
+}
+.footer2 {
+    height: 50px;
+    background-color: #53404d;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    z-index: -1;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+span {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 7px;
+}

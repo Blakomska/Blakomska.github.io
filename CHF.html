@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>KURSY WALUT I ZŁOTA</title>
-
     <style>
+
     </style>
     <link rel="stylesheet" type="text/css" href="style_strona.css">
-
 </head>
 
 <body>
@@ -33,41 +30,60 @@
         <div class="zloto">
             <a href="ZLOTO.html">ZŁOTO</a>
         </div>
+
     </div>
     <div class="mainBar2"></div>
-
-    <div class="opisy">
-        <span class="opis1">
-            <h3>
-                Witamy w KANTORZE WROCŁAWSKIM
-            </h3>
-            Tutaj sprawdzisz ceny kupna i sprzedaży walut oraz złota w próbie 1000 według aktualnych kursów podanych na stronie 
-            <br>Narodowego Banku Polskiego.
-        </span>
-        <span class="opis2">
-            Aby zapoznać się z cenami wybierz odpowiednią zakładkę z menu strony.
-            <br>
-            <br>
-            Zapewniamy bezpieczeństwo zawieranych transakcji oraz profesjonalną obsługę.
-            <br>
-            <br>
-            <br>
-            <h3>
-            KANTOR WROCŁAWSKI
-            <br>
-            ul. Henryka Sienkiewicza 112
-            <br>
-            50-348 Wrocław
-        </h3>
-        </span>
-    </div>
     <p>
-        <span class="image">
-            <img src="C:/Users/blank/OneDrive/Pulpit/workshop-code-master/RepoProjektKoncowy/Blakomska.github.io/COINCOLLECTIONCOINS.jpg"
-                alt="Monety" width="430px">
-            </img>
-        </span>
+    <table class="tab_waluta">
+        <tr>
+            <th>Frank szwajcarski</th>
+            <th>Waluta</th>
+            <th>KUPNO</th>
+            <th>SPRZEDAŻ</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td id="currentDate1"></td>
+            <td>CHF</td>
+            <td id="kupno"></td>
+            <td id="sprzedaz"></td>
+            <td>PLN</td>
+        </tr>
+    </table>
     </p>
+
+    <p>
+        <table class="historia_waluta">
+            <tr>
+                <th>Data</th>
+                <th>Waluta</th>
+                <th>KUPNO</th>
+                <th>SPRZEDAŻ</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td id="data1"></td>
+                <td>CHF</td>
+                <td id="kupno1"></td>
+                <td id="sprzedaz1"></td>
+                <td>PLN</td>
+            </tr>
+            <tr>
+                <td id="data2"></td>
+                <td>CHF</td>
+                <td id="kupno2"></td>
+                <td id="sprzedaz2"></td>
+                <td>PLN</td>
+            </tr>
+            <tr>
+                <td id="data3"></td>
+                <td>CHF</td>
+                <td id="kupno3"></td>
+                <td id="sprzedaz3"></td>
+                <td>PLN</td>
+            </tr>
+        </table>
+        </p>
 
     <div class="footer">
         <span class="adres">KANTOR WROCŁAWSKI, ul. Sienkiewicza 112, 50-348 Wrocław</span>
@@ -82,7 +98,11 @@
     </div>
     <div class="footer2"></div>
 
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="waluty.js"></script>
+    <script>
+        getData("chf");
+        daty();
+    </script>
 </body>
 
 </html>
